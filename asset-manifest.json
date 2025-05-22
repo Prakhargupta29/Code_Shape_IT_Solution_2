@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Code_Shape_IT_Solution_2/static/css/main.cc84f0e2.css",
+    "main.js": "/Code_Shape_IT_Solution_2/static/js/main.0e2233a8.js",
+    "static/js/239.2b17afd9.chunk.js": "/Code_Shape_IT_Solution_2/static/js/239.2b17afd9.chunk.js",
+    "static/js/977.a7e1381c.chunk.js": "/Code_Shape_IT_Solution_2/static/js/977.a7e1381c.chunk.js",
+    "static/js/455.5d5e7bbe.chunk.js": "/Code_Shape_IT_Solution_2/static/js/455.5d5e7bbe.chunk.js",
+    "static/js/453.68693753.chunk.js": "/Code_Shape_IT_Solution_2/static/js/453.68693753.chunk.js",
+    "static/media/p1.jpg": "/Code_Shape_IT_Solution_2/static/media/p1.7a92e350981100b14fa6.jpg",
+    "index.html": "/Code_Shape_IT_Solution_2/index.html",
+    "main.cc84f0e2.css.map": "/Code_Shape_IT_Solution_2/static/css/main.cc84f0e2.css.map",
+    "main.0e2233a8.js.map": "/Code_Shape_IT_Solution_2/static/js/main.0e2233a8.js.map",
+    "239.2b17afd9.chunk.js.map": "/Code_Shape_IT_Solution_2/static/js/239.2b17afd9.chunk.js.map",
+    "977.a7e1381c.chunk.js.map": "/Code_Shape_IT_Solution_2/static/js/977.a7e1381c.chunk.js.map",
+    "455.5d5e7bbe.chunk.js.map": "/Code_Shape_IT_Solution_2/static/js/455.5d5e7bbe.chunk.js.map",
+    "453.68693753.chunk.js.map": "/Code_Shape_IT_Solution_2/static/js/453.68693753.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc84f0e2.css",
+    "static/js/main.0e2233a8.js"
+  ]
+}
