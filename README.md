@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 use admin@example.com and admin123 as password for login
+
+
+
+
 In the project directory, you can run:
 
 ### `npm start`
