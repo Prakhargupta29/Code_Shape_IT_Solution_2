@@ -1,0 +1,203 @@
+/* ContentManagementPage.css */
+
+.content-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fbfd;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.filter-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-sort select,
+.filter-sort button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-sort button:hover {
+  background: #2980b9;
+  color: #fff;
+}
+
+.content-list {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.content-card {
+  background: #fff;
+  border-left: 5px solid #3498db;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.content-card h3 {
+  margin: 0 0 10px;
+  color: #34495e;
+}
+
+.content-card p {
+  margin: 4px 0;
+}
+
+.content-card button {
+  margin-right: 10px;
+  padding: 6px 10px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content-card button:last-child {
+  background-color: #e74c3c;
+}
+
+.content-card button:hover {
+  opacity: 0.9;
+}
+
+.content-form {
+  background: #bbe3ec;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.content-form input:focus,
+.content-form textarea:focus,
+.content-form select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+ 
+}
+
+.content-form h2 {
+   margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.content-form input,
+.content-form textarea,
+.content-form select {
+  display: block;
+  width: 100%;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  flex: 1 1 100%;
+  padding: 12px 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #000; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.content-form-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.content-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.content-form button {
+  flex: 1 1 160px;
+  padding: 12px 18px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.content-form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.content-form button:hover {
+  background-color: #27ae60;
+}
+
+.content-form button:last-child {
+  background-color: #e67e22;
+}
+
+.content-form button:last-child:hover {
+  background-color: #d35400;
+}
+
+@media (max-width: 600px) {
+  .filter-sort {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content-card {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-form-group {
+    flex-direction: column;
+  }
+
+  .content-form-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .content-form button {
+    width: 100%;
+    max-height: 50px;
+  }
+}
+.content-media {
+    max-width: 100%;
+    max-height: 200px;
+    margin-top: 10px;
+    border-radius: 8px;
+}

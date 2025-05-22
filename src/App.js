@@ -1,25 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import AdminLogin from './component/AdminLogin';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Dashboard from "./component/Dashboard";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Users from './component/Users';
+import Layout from './component/layout';
+import MaintenanceDashboard from "./component/MaintenanceDashboard";
+import Notification from './component/Notification';
+import ContentManagement from './component/ContentManagement';
+import Report from './component/Report';
+import Todolist from './component/Todolist';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<AdminLogin />} />
+        <Route element={<Layout />}>
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Users" element={<Users />} />
+          <Route path="/Todolist" element={<Todolist />} />
+          <Route path="/Report" element={<Report/>} />
+          <Route path="/MaintenanceDashboard" element={<MaintenanceDashboard/>} />
+          <Route path="/Notification" element={<Notification/>} />
+          <Route path="/ContentManagement" element={<ContentManagement/>} />
+        </Route>
+      </Routes>
+      </Router>
   );
 }
 
 export default App;
+
+
+
+

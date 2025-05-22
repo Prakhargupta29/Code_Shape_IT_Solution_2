@@ -1,0 +1,91 @@
+.dashboard-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.watermark-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 3rem;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Dark/light themes (optional improvements) */
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+body.light-theme {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+/* Ensure canvas inside charts is responsive */
+.card canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+.dashboard-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+
+/* css for date and time  */
+.date-time-display {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    font-weight: 600;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.date-time-display .date-row,
+.date-time-display .time-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dark-mode .date-time-display {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 576px) {
+    .date-time-display {
+        font-size: 0.85rem;
+        padding: 10px 14px;
+    }
+}
+
+

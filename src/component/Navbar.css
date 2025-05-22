@@ -1,0 +1,340 @@
+.navbar {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navbar-bg, #f8f9fa);
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-left h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar-left p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.theme-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.notification-wrapper {
+  position: relative;
+}
+
+.notification-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.notif-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  color: #333;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 10px;
+  width: 220px;
+  z-index: 999;
+  animation: dropdownFade 0.3s ease;
+}
+
+.notification-dropdown p {
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.85rem;
+}
+
+.notification-dropdown p:last-child {
+  border-bottom: none;
+} 
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ /* Navbar container */
+
+
+
+.theme-controls {
+  display: flex;
+  align-items: center;
+   gap: 10px; /*Reduce or increase space between button and checkbox */
+}
+
+.switch-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.switch-icon input {
+  display: none;
+}
+
+.switch-icon .icon {
+  transition: transform 0.3s ease;
+}
+
+.switch-icon .icon:hover {
+  transform: scale(1.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  padding-bottom: 1em;
+  background-color: var(--navbar-bg, #ffffff);
+  color: var(--navbar-text, #333);
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  width: 100%; /* Make navbar span full width */
+  box-sizing: border-box; /* include padding in width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: baseline; /* vertically center items */
+  gap: 1rem; /* space between h2 and p */
+}
+
+/* Optional: prevent wrapping */
+.navbar-left h2,
+.navbar-left p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.navbar-left h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar-left p {
+  margin: 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+
+.switch-icon {
+  display: inline-FLEX;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.2rem;
+}
+
+.switch-icon input[type="checkbox"] {
+  display: none;
+}
+
+.switch-icon .icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.notification-wrapper {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.notif-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.notification-dropdown {
+  position: absolute;
+  right: 0;
+  top: 28px;
+  background: white;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+  border-radius: 6px;
+  padding: 0.5rem;
+  width: 200px;
+  z-index: 1000;
+  font-size: 0.9rem;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-left {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .navbar-actions {
+    gap: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .notification-dropdown {
+    width: 180px;
+    font-size: 0.85rem;
+  }
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space between icons */
+  flex-shrink: 0; /* prevent shrinking */
+  min-width: 120px; /* reserve space so layout stays stable */
+  justify-content:space-evenly ; 
+}
+
+
+.switch-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+}
+
+.notification-wrapper {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.notif-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-weight: bold;
+  pointer-events: none;
+}
+.notification-icon {
+  position: relative; /* Needed for notif-badge to position inside it */
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Responsive tweak: On very small screens, stack vertically */
+@media (max-width: 400px) {
+  .navbar-actions {
+    flex-direction: column;
+    gap: 0.7rem;
+    min-width: auto;
+  }
+}
+.dark-mode .notification-dropdown {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+.notif-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  border: 2px solid white;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.gradient-icon {
+  background: linear-gradient(to right, #f59e0b, #ef4444);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: rgb(33, 33, 32);
+  -webkit-text-fill-color: transparent;
+
+  display: inline-block;
+}
+
+
+.icon-hover:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-shadow {
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+}
+

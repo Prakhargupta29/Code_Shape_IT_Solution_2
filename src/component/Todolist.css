@@ -1,0 +1,173 @@
+:root {
+  --light-bg: #f9f9f9;
+  --primary: #4f46e5;
+  --gradient: linear-gradient(135deg, #4f46e5, #3b82f6);
+  --radius: 8px;
+}
+
+/* Set default body styling */
+body {
+  background-color: white;
+  color: black;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.todo-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+input,
+select,
+button {
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  border: 1px solid #343232;
+  width: 100%;
+  box-sizing: border-box;
+  color: black;
+}
+
+button {
+  background: var(--gradient);
+  color: rgb(247, 241, 241);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.task-card {
+  background-color: rgb(242, 235, 235);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  position: relative;
+  transition: transform 0.2s ease;
+  color: black;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  border-radius: var(--radius);
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.badge-low {
+  background-color: #a7f3d0;
+  color: #065f46;
+}
+
+.badge-medium {
+  background-color: #fde68a;
+  color: #92400e;
+}
+
+.badge-high {
+  background-color: #fecaca;
+  color: #991b1b;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Filters and form responsiveness */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters .form-control,
+.filters select {
+  min-width: 180px;
+}
+
+@media (max-width: 768px) {
+  .task-form,
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters .form-control,
+  .filters select {
+    width: 100%;
+  }
+}
+
+/* Todolist.css */
+
+.todo-container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  box-sizing: border-box;
+}
+
+.task-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Priority badges */
+.badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.badge-low {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.badge-medium {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badge-high {
+  /* background-color: #f5eeee; */
+  color: #991b1b;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}

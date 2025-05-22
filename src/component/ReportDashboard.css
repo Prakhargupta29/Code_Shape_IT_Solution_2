@@ -1,0 +1,315 @@
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+/* ReportDashboard.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Make tables responsive */
+@media screen and (max-width: 640px) {
+  table {
+    font-size: 0.8rem;
+  }
+
+  th,
+  td {
+    padding: 0.5rem 0.3rem;
+  }
+}
+
+/* Card hover animation */
+.card-hover {
+  transition: transform 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure charts don't overflow */
+.chart-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Responsive padding for container */
+@media screen and (max-width: 768px) {
+  .p-6 {
+    padding: 1rem;
+  }
+}
+
+/* Button improvements */
+button {
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Small screens adjustments */
+@media screen and (max-width: 480px) {
+  .grid-cols-2,
+  .md\:grid-cols-4,
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(2, 1fr)) !important;
+  }
+}
+
+/* Container Padding */
+.p-6 {
+  padding: 1.5rem;
+}
+
+/* Typography */
+.text-2xl {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Utility Spacing */
+.space-y-8 > * + * {
+  margin-top: 2rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+/* Grid System for Summary Cards */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, 1fr); /* Stack on mobile */
+  }
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ReportDashboard.css */
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart Containers */
+.chart-container {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: auto;
+}
+
+/* Export Button */
+.export-button {
+  /* padding: 0.5rem 1rem;*/
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #3b82f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.export-button:hover {
+  background-color: green;
+  transform: translateY(-2px);
+}
+
+.export-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: white;
+  margin-right:20px ;
+}
+
+/* Summary Value Colors */
+.text-green {
+  color: #16a34a;
+}
+
+.text-red {
+  color: #dc2626;
+}
+
+/* Arrow icon style */
+.arrow {
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: 0.25rem;
+}
+
+/* Responsive Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+}
+
+tr.border-t {
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Container spacing (optional, if not using Tailwind for outer spacing) */
+.report-dashboard {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Summary Cards Grid */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+/* Summary Card Styles */
+.summary-card {
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.summary-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Chart + Table containers (if needed) */
+.chart-card,
+.table-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+}
+
+/* Table Styling */
+.table-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-card th,
+.table-card td {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.table-card th {
+  font-weight: 600;
+  background-color: #f9fafb;
+}
+
+.table-card tr:not(:first-child):hover {
+  background-color: #f3f4f6;
+}
+
+.change-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* same as Tailwind's gap-2 */
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+.neutral {
+  color: #555; /* or gray, depending on design */
+}
+
+.full-width-container {
+  width: 50vw; /* full viewport width */
+  padding: 24px; /* same as p-6 in Tailwind (6 × 4px) */
+}
+
+.full-width-container > * + * {
+  margin-top: 2rem; /* same as space-y-8 */
+}
+
+.export-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+
+
+.tab-button {
+    padding: 8px 16px;
+    background: #3d84f7;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.tab-button:hover {
+    background: #d5e160;
+}
+.active-tab {
+    background-color: #6366f1;
+    color: white;
+}
