@@ -1,13 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-use admin@example.com and admin123 as password for login
-
-
-
-Admin Dashboard Project Overview
+                                                                          Admin Dashboard Project Overview
 This is a comprehensive admin dashboard application built with React, featuring multiple modules for content management, user administration, reporting, notifications, and system maintenance. The application provides a complete solution for administrators to manage various aspects of a web platform or CMS.
 
 Key Features
